@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  color: rgb(27, 85, 161);
+  margin-top: 40px;
+}
+.form {
+  padding: 50px;
+  button {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+  }
+}
+
+.album {
+  margin: 30px auto;
+  .card {
+    display: inline-block;
+    margin: 30px;
+    .close {
+      position: absolute;
+      font-size: 30px;
+      top: 10px;
+      right: 10px;
+      color: white;
+      background-color: black;
+    }
+    .input {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    span {
+      color: blue;
+      font-size: 10px;
+      cursor: pointer;
+    }
+  }
+}

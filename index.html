@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css"
+    />
+    <script src="app.js" defer></script>
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="container header">
+      <h1 class="display-4">My Photo Album</h1>
+    </div>
+    <div class="container form">
+      <div class="row">
+        <div class="col-8">
+          <!-- image url input-->
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3">Image URL</span>
+            </div>
+            <input
+              type="text"
+              class="form-control url"
+              placeholder="include https://"
+              id="basic-url"
+              aria-describedby="basic-addon3"
+            />
+          </div>
+          <!-- image title input-->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"
+                >Image Title</span
+              >
+            </div>
+            <input
+              type="text"
+              class="form-control title"
+              placeholder="Title your image"
+              aria-label="image_title"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <!-- image description input-->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Image Description</span>
+            </div>
+            <input
+              required
+              type="text"
+              class="form-control description"
+              placeholder="Describe your image"
+              aria-label="image_title"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <button
+            type="button"
+            onsubmit="return validateForm()"
+            class="btn btn-dark addBtn"
+          >
+            Add Image
+          </button>
+          <button type="button" class="btn btn-dark resetBtn">Reset</button>
+        </div>
+      </div>
+    </div>
+    <!-- cards container -->
+    <div class="container album"></div>
+  </body>
+</html>

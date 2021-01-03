@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  color: #1b55a1;
+  margin-top: 40px;
+}
+
+.form {
+  padding: 50px;
+}
+
+.form button {
+  display: block;
+  width: 150px;
+  margin: 20px auto;
+}
+
+.album {
+  margin: 30px auto;
+}
+
+.album .card {
+  display: inline-block;
+  margin: 30px;
+}
+
+.album .card .close {
+  position: absolute;
+  font-size: 30px;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background-color: black;
+}
+
+.album .card .input {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.album .card span {
+  color: blue;
+  font-size: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
